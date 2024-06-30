@@ -8,8 +8,8 @@ import {NotFoundComponent} from './appli/not-found/not-found.component'
 
 export const routes: Routes = [
 	
-	{ path: '/', component: AcceuilComponent, },
-    { path: '/login', component: ConnectionComponent},
+	{ path: '', component: AcceuilComponent },
+    { path: 'login', component: ConnectionComponent },
     { path: 'signup', component: InscriptionComponent },
     { path: 'about', component: PresentationComponent },
     { path: 'contact', component: ContactComponent },
