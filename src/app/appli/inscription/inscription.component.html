@@ -1,0 +1,41 @@
+<p>inscription works!</p>
+
+
+<form  (ngSubmit)="onSubmit()" #registerForm="ngForm">
+  <!-- 2 column grid layout with text inputs for the first and last names -->
+  <div class="row mb-4">
+    <div class="col">
+      <div class="form-outline">
+     	<label class="form-label">Pseudo : </label>
+        <input type="text" name="username" class="form-control" [(ngModel)]="user.username"/>
+      </div>
+    </div>
+ 
+  <!-- Email input -->
+  <div class="form-outline mb-4">
+   	<label class="form-label">Adresse Email : </label>
+    <input type="email" name="email" class="form-control" [(ngModel)]="user.email"/>
+   
+  </div>
+
+  <!-- Password input -->
+  <div class="form-outline mb-4">
+  	<label class="form-label">Mot de passe : </label>
+    <input type="password" name="password" class="form-control" [(ngModel)]="user.password"/>
+  </div>
+
+   <!-- Checkbox -->
+  <!--
+  <div class="form-check d-flex justify-content-center mb-4">
+    <input  type="checkbox" value="" id="newsletter"/>
+    <label class="form-check-label" for="newsletter">
+      Souhaitez vous recevoir notre lettre d'information de temps en temps ?
+    </label>
+  </div>
+ -->
+  <!-- Submit button -->
+  <!-- [disabled]="!registerForm.valid" -->
+  <button class="btn btn-success btn-block mb-4 " type="submit" >Accédez au site</button>
+</div>
+ 
+</form>
