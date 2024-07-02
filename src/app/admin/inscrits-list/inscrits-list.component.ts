@@ -32,12 +32,19 @@ export class InscritsListComponent implements OnInit {
 	}
 
 	updateUser(id: number) {
-		this.router.navigate(['inscrits', id]);
+		this.router.navigate(['inscrits/:id', id]);
 	}
 
 	deleteUser(id: number) {
 		this.userService.deleteUser(id).subscribe(data => {
 			console.log(data);
+			this.getUsers();
+		});
+	}
+	
+	deleteAllUsers(){
+		this.userService.deleteAllUsers().subscribe(data => {
+			// console.log(data);
 			this.getUsers();
 		});
 	}

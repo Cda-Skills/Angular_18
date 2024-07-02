@@ -33,5 +33,9 @@ export class UserService {
 	deleteUser(id: number): Observable<Object> {
 		return this.http.delete(`${this.basUrl}/${id}`);
 	}
+	
+	deleteAllUsers(): Observable<Object> {
+		return this.http.delete(`${this.basUrl}`);
+	}
 
 }
