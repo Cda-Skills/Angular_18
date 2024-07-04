@@ -1,4 +1,4 @@
-<p>inscription works!</p>
+
 
 
 <form  (ngSubmit)="onSubmit()" #registerForm="ngForm">
@@ -24,17 +24,7 @@
     <input type="password" name="password" class="form-control" [(ngModel)]="user.password"/>
   </div>
 
-   <!-- Checkbox -->
-  <!--
-  <div class="form-check d-flex justify-content-center mb-4">
-    <input  type="checkbox" value="" id="newsletter"/>
-    <label class="form-check-label" for="newsletter">
-      Souhaitez vous recevoir notre lettre d'information de temps en temps ?
-    </label>
-  </div>
- -->
-  <!-- Submit button -->
-  <!-- [disabled]="!registerForm.valid" -->
+
   <button class="btn btn-success btn-block mb-4 " type="submit" >Accédez au site</button>
   
 </div>
