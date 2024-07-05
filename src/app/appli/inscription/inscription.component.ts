@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserService } from '../../services/user.service';
 import { User } from '../../models/user.model';
-import { FormsModule, NgForm } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-inscription',
@@ -33,11 +33,11 @@ export class InscriptionComponent implements OnInit {
 	}
 
 	redirectToUserList() {
-		this.router.navigate(['/inscrits']);
+		this.router.navigate(['/liste']);
 	}
 
 	onSubmit() {
-		console.log(this.user);
+		console.log("This is the create button !!");
 		
 		this.saveUser();
 	}

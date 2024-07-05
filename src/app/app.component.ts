@@ -9,6 +9,7 @@ import { TopmenuComponent } from './general/topmenu/topmenu.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
   title = 'Angular_18';
 }

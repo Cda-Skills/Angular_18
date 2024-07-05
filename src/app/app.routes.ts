@@ -9,21 +9,26 @@ import {InscriptionComponent} from './appli/inscription/inscription.component';
 import {PresentationComponent} from './appli/presentation/presentation.component';
 import {ContactComponent} from './appli/contact/contact.component';
 
-import {InscritsListComponent} from './admin/inscrits-list/inscrits-list.component';
-import {InscritsUpdateComponent} from './admin/inscrits-update/inscrits-update.component';
+/* import {InscritsListComponent} from './admin/inscrits-list/inscrits-list.component'; */
+/* import { ListeInscritsComponent } from './appli/liste-inscrits/liste-inscrits.component'; */
+/* import {InscritsUpdateComponent} from './admin/inscrits-update/inscrits-update.component'; */
 import {DashboardComponent} from './admin/dashboard/dashboard.component';
 
 
 export const routes: Routes = [
 	
-	{ path: '', component: AcceuilComponent },
+	{ path: 'acceuil', component: AcceuilComponent },
 	{ path: 'news', component: NewsComponent},
     { path: 'login', component: ConnectionComponent },
     { path: 'signup', component: InscriptionComponent },
     { path: 'about', component: PresentationComponent },
     { path: 'contact', component: ContactComponent },
-    { path: 'inscrits', component: InscritsListComponent},
-    { path: 'update', component: InscritsUpdateComponent},
+    /* { path: 'inscrits', component: InscritsListComponent}, */
+    /* { path: 'liste', component: ListeInscritsComponent}, */
+    /* { path: 'update', component: InscritsUpdateComponent}, */
     { path: 'dashboard', component: DashboardComponent}
    
 ];
+
+
+

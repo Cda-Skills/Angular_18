@@ -26,9 +26,10 @@ export class UserService {
 		return this.http.get<User>(`${this.basUrl}/${id}`);
 	}
 
-	updateUser(id: number, user: User): Observable<Object> {
-		return this.http.put(`${this.basUrl}/${id}`, user);
-	}
+	/* updateUser(): Observable<Object> {
+	
+		console.log('How does Angular works ??');
+	} */
 
 	deleteUser(id: number): Observable<Object> {
 		return this.http.delete(`${this.basUrl}/${id}`);
